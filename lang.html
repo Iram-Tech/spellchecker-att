@@ -2,10 +2,27 @@
 <html>
 	<head>
 		<title>Testing Spellchecker</title>
+		<link rel="icon" type="image/png" href="https://iram-tech.github.io/spellchecker-att/abc.png">
 		<style>
+			body {
+				font-family: sans-serif;
+				padding: 0;
+				margin: 0;
+				background-color: 30BEDB;
+				}
+		
 			.main-container {
 				max-width: 300px;
-				margin: 0 auto;
+				margin: 10% auto 0;
+				background-color: #fff;
+				border-radius: 5px;
+			}
+			
+			.main-container p {
+				padding: 5px 25px;
+				border-radius: 5px;
+				text-align: center;
+				font-size: 32px;
 			}
 		</style>
 	</head>
@@ -13,8 +30,12 @@
 	<body>
 		
 		<div class="main-container">
-			<p contenteditable="true" spellcheck="true">Apologise here. Analysing things.</p>
+			<p contenteditable="true" spellcheck="true" id="check-test">Analysing things</p>
 		</div>
+		
+		<script>
+			document.getElementById("check-test").focus();
+		</script>
 		
 	</body>
 </html>
